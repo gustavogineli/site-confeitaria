@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+/* Estilos para telas menores (responsivo) */
+
+/* Estilos para telas menores (responsivo) */
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    max-width: 90%; /* Ajusta a largura máxima para telas menores */
+    padding: 0 15px; /* Adiciona um padding mais estreito */
+  }
+
+  header {
+    height: auto; /* Ajusta a altura do cabeçalho automaticamente */
+    padding: 10px 0; /* Espaçamento interno menor */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+    menu {
+      display: block; /* Mostra os itens do menu */
+      position: relative; /* Restaura a posição padrão */
+      top: 0; /* Remove o ajuste de posição vertical */
+      width: auto; /* Restaura a largura automática */
+      box-shadow: none; /* Remove a sombra do menu */
+    }
+
+  menu ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  menu ul li {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+
+  menu ul li a {
+    display: block;
+    padding: 10px 0;
+    color: #444;
+  }
+
+  #hero-image {
+    height: 300px; /* Reduz a altura da seção de imagem hero */
+    padding-top: 60px; /* Ajusta o espaçamento interno */
+  }
+
+  #hero-image h2 {
+    margin: 70px 0 5px 0; /* Ajusta o espaçamento do título */
+  }
+ 
+.titulo-1 {
+  font-family: var(--fonte-destaque);
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.titulo {
+  font-family: var(--fonte-destaque2);
+   text-align: center;
+   margin-bottom: 30px;
+   font-size: 1.4em;
+ }
+
+  .features-list {
+    flex-direction: column; /* Empilha os itens de características em coluna */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  #feature {
+    padding: 50px 0 5px 0;
+  } 
+
+  .features-list #li {
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin: 0 0 30px 0; /* Adiciona espaçamento entre os itens */
+  }
+
+  #features #ul #li {
+    width: 75%; /* Ocupa toda a largura disponível */
+    margin-right: 0;
+    
+  }
+
+  #primary-content h2, #cta h2  {
+    font-size: 1.1em; /* Ajusta o tamanho do título */
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px 0 20px 0; /* Ajusta o espaçamento interno */
+  }
+
+  #secondary-content {
+    margin: 30px 0; /* Ajusta a margem superior e inferior */
+  }
+
+  #secondary-content article {
+    width: 90%; /* Ocupa toda a largura disponível */
+    height: auto; /* Ajusta a altura automaticamente */
+    margin: auto ;
+    margin-bottom: 30px; /* Adiciona espaçamento inferior */
+    float: none; /* Remove o float */
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    max-width: 90%; /* Ajusta a largura máxima para telas menores */
+    padding: 0 15px; /* Adiciona um padding mais estreito */
+  }
+
+  header h1 {
+    font-size: 1.4em; /* Ajusta o tamanho da fonte */
+  }
+
+  span#burguer {
+    display: none; /* Esconde o ícone do menu */
+  }
+
+  menu {
+    display: block; /* Mostra os itens do menu */
+    position: relative; /* Restaura a posição padrão */
+    top: 0; /* Remove o ajuste de posição vertical */
+    width: auto; /* Restaura a largura automática */
+    box-shadow: none; /* Remove a sombra do menu */
+  }
+
+  menu ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  menu ul li {
+    margin: 0 10px; /* Adiciona espaçamento entre os itens do menu */
+  }
+
+  #hero-image {
+    height: 400px; /* Ajusta a altura da seção de imagem hero */
+    padding-top: 80px; /* Ajusta o espaçamento interno */
+  }
+
+  #hero-image h2 {
+    margin: 100px 0 0 0; /* Ajusta o espaçamento do título */
+  }
+   
+
+.titulo-1 {
+  font-family: var(--fonte-destaque);
+  font-weight: 500;
+  font-size: 3em;
+}
+ 
+  .features-list {
+    flex-direction: row; /* Restaura a orientação dos itens para linha */
+    justify-content: space-between; /* Espaçamento uniforme entre os itens */
+  }
+
+  .features-list li {
+    width: 35%; /* Define a largura fixa para os itens */
+    height: 35%;
+    margin: 0; /* Remove a margem entre os itens */
+  }
+
+  #features ul li {
+    width: 35%; /* Define a largura fixa para os itens */
+    height: 35%;
+    margin-left: 20px; /* Adiciona margem entre os itens */
+  }
+
+  #primary-content h2 {
+    font-size: 1.3em; /* Ajusta o tamanho do título */
+    width: 400px; /* Define uma largura fixa para o título */
+    margin: 0 auto 20px auto; /* Centraliza o título horizontalmente */
+    border-bottom: 1px solid #02b8dd; /* Adiciona uma borda inferior */
+    padding: 0 0 20px 0; /* Ajusta o espaçamento interno */
+  }
+
+  #secondary-content {
+    margin: 60px 0; /* Ajusta a margem superior e inferior */
+  }
+
+  #secondary-content article {
+    width: 45%; /* Define a largura fixa para os artigos */
+    height: 270px; /* Mantém a altura fixa */
+    margin-bottom: 0; /* Remove a margem inferior */
+    float: left; /* Restaura o float para alinhar os artigos lado a lado */
+  }
+
+  #secondary-content article:first-child {
+    margin-right: 30px; /* Adiciona margem direita apenas para o primeiro artigo */
+  }
+
+  .overplay {
+    padding: 20px; /* Ajusta o espaçamento interno do overlay */
+  }
+
+  @media (min-width: 768px){
+    .produto {
+      min-width: 30%;
+    }
+  }
+
+}

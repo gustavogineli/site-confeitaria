@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/reset.css">
+  <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+  
+  <header>
+    <div class="wrapper">
+      <h1>Éclat de sucre<span class="blue-dot">.</span></h1>
+      
+      <span id="burguer" class="material-icons"  onclick="clickMenu()">menu</span>
+      <menu id="itens">
+        <ul>
+          <li><a href="#">accueil</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">nous contacter</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </menu>
+     
+    </div>
+  </header>
+
+  <main>
+    <section id="hero-image">
+      <!--Imagem-->
+      <div class="wrapper">
+        <h2 class="titulo-1">Le paradis<br></h2>
+        <h1 class="titulo">sous forme de bonbons</h2>
+        <a href="#" class="button-1">Get Started</a>
+      </div>
+    </section>
+
+  <div style="background-color: rgb(252, 251, 250)">
+    <h1 class="sig">Signature</h1>
+    <section class="produtos-container">
+      <button class="seta esquerda" onclick="rolarParaEsquerda()">‹</button>
+      <div class="produtos-scroll" id="lista-produtos">
+        <div class="produto" data-nome="crème brûlée" data-descricao="La crème brûlée est l'un des desserts les plus emblématiques de la cuisine française - une élégante combinaison de simplicité et de sophistication. Son histoire, cependant, est curieusement contestée par plus d'un pays européen." data-img="https://via.placeholder.com/400x300">
+          <img src="/picture1.jpeg" alt="Bolo de Chocolate">
+          <h3>Crème brûlée</h3>
+          <p>Rupture et velours</p>
+          <button onclick="abrirModal(this)">en savoir plus</button>
+        </div>
+        <div class="produto" data-nome="macaron" data-descricao="Le macaron est devenu un symbole de la confiserie française et s'est répandu dans le monde entier, prenant des couleurs vives et des saveurs exotiques : pistache, lavande, thé vert, caramel à la fleur de sel, framboise et même foie gras.
+        - Aujourd'hui, on le trouve dans les pâtisseries de luxe et les boutiques spécialisées du monde entier." data-img="https://via.placeholder.com/400x300">
+          <img src="/picture2.jpeg" alt="Cupcake de Baunilha">
+          <h3>Macaron</h3>
+          <p>Explosion élégante</p>
+          <button onclick="abrirModal(this)">en savoir plus</button>
+        </div>
+        <div class="produto" data-nome="Croissant" data-descricao="Le croissant, avec sa croûte croustillante et son intérieur léger et beurré, est aujourd'hui un symbole de la pâtisserie française, mais ses origines remontent à l'Autriche, et non à la France." data-img="https://via.placeholder.com/400x300">
+          <img src="/picture9.jpeg" alt="Torta de Morango">
+          <h3>Croissant</h3>
+          <p>Un pop doré</p>
+          <button onclick="abrirModal(this)">en savoir plus</button>
+        </div>
+        <div class="produto" data-nome="Mile-feuline" data-descricao="Les madeleines sont de jolis petits gâteaux en forme de coquille, originaires de la région de Lorraine, dans le nord-est de la France. Préparées avec une pâte légère composée de beurre, d'œufs, de sucre, de farine et d'une touche de vanille ou de zeste de citron, elles sont traditionnellement cuites dans des moules à rainures, ce qui leur donne leur forme caractéristique." data-img="https://via.placeholder.com/400x300">
+          <img src="/picture8.jpeg" alt="Torta de Morango">
+          <h3>Mile-feuline</h3>
+          <p>Croque crémeux</p>
+          <button onclick="abrirModal(this)">en savoir plus</button>
+          </div>
+          <div class="produto" data-nome="Tarte Tatin" data-descricao="La tarte Tatin est une tarte classique aux pommes caramélisées inversées, créée par hasard à la fin du XIXe siècle par deux sœurs, Stéphanie et Caroline Tatin, dans la petite ville de Lamorlaye, en Sologne, dans le centre de la France.
+          Les sœurs tenaient l'Hôtel Tatin, fréquenté par des chasseurs et des voyageurs. Un jour, Stéphanie, surchargée de travail en cuisine, oublie de tapisser le moule de pâte avant d'y mettre les pommes, le sucre et le beurre à cuire. Pour ne pas la gaspiller, elle pose la pâte sur les pommes caramélisées et met le tout au four." data-img="https://via.placeholder.com/400x300">
+            <img src="/picture7.jpeg" alt="Torta de Morango">
+            <h3>Tarte Tatin</h3>
+            <p>Inversion sucrée</p>
+            <button onclick="abrirModal(this)">en savoir plus</button>
+            </div>
+            <div class="produto" data-nome="Canelé " data-descricao="Le canelé (ou canelé de Bordeaux) est une confiserie française traditionnelle de la région de Bordeaux, dont les origines remontent au XVIIIe siècle, bien que sa renommée mondiale soit beaucoup plus récente. Petit, cylindrique, avec une coquille sombre et croquante à l'extérieur et un intérieur moelleux et aromatique, le canelé est fabriqué avec de la farine, du lait, des œufs, du beurre, de la vanille et du rhum." data-img="https://via.placeholder.com/400x300">
+              <img src="/picture6.jpeg" alt="Torta de Morango">
+              <h3>Canelé</h3>
+              <p>Mystére brûlé</p>
+              <button onclick="abrirModal(this)">en savoir plus</button>
+              </div>
+              <div class="produto" data-nome="Paris-Brest " data-descricao="Le Paris-Brest est né en 1891, créé par un confiseur de Maisons-Laffitte, Louis Durand, à la demande du journaliste Pierre Giffard, organisateur de la célèbre course cycliste Paris-Brest-Paris.
+              Giffard souhaitait une friandise qui célébrerait la course - l'une des premières courses de longue distance de l'histoire du cyclisme - et qui servirait également de source d'énergie pour les participants. La réponse fut créative et délicieuse : un bonbon en forme de roue de vélo, fabriqué avec de la pâte à choux (celle utilisée pour les éclairs et les profiteroles), fourré d'une crème pralinée au beurre (amandes et noisettes caramélisées) et décoré d'amandes effilées." data-img="https://via.placeholder.com/400x300">
+                <img src="/picture5.jpeg" alt="Torta de Morango">
+                <h3>Paris-Brest</h3>
+                <p>Nuage de preline</p>
+                <button onclick="abrirModal(this)">en savoir plus</button>
+                </div>
+          
+          
+
+          
+
+       
+
+
+        <!-- Adicione mais produtos conforme necessário -->
+      </div>
+      <button class="seta direita" onclick="rolarParaDireita()">›</button>
+    </section>
+  
+    <!-- MODAL -->
+    <div class="modal" id="modal-produto">
+      <div class="modal-conteudo">
+        <button class="fechar-modal" onclick="fecharModal()">Fechar</button>
+        <h2 id="modal-nome"></h2>
+        <img id="modal-img" src="" alt="">
+        <p id="modal-descricao"></p>
+      </div>
+    </div>
+  
+    <script>
+      const container = document.getElementById("lista-produtos");
+      const modal = document.getElementById("modal-produto");
+      const modalNome = document.getElementById("modal-nome");
+      const modalDescricao = document.getElementById("modal-descricao");
+      const modalImg = document.getElementById("modal-img");
+  
+      function rolarParaEsquerda() {
+        container.scrollBy({ left: -220, behavior: 'smooth' });
+      }
+  
+      function rolarParaDireita() {
+        container.scrollBy({ left: 220, behavior: 'smooth' });
+      }
+  
+      function abrirModal(botao) {
+        const produto = botao.closest('.produto');
+        modalNome.textContent = produto.dataset.nome;
+        modalDescricao.textContent = produto.dataset.descricao;
+        modalImg.src = produto.dataset.img;
+        modal.style.display = 'flex';
+      }
+  
+      function fecharModal() {
+        modal.style.display = 'none';
+      }
+  
+      // Fecha o modal ao clicar fora do conteúdo
+      window.onclick = function(event) {
+        if (event.target === modal) {
+          fecharModal();
+        }
+      }
+    </script>
+    </div>
+  
+
+    <section id="primary-content" style="background-color: #f8aaaa">
+      <div class="wrapper">
+        <div>
+        <img class="historia" src="/pexels-anna-nekrashevich-7552066.jpg" alt="">
+       </div>
+          <article>
+          <h2>histoire</h2>
+          <p>
+            Quand la douceur rencontre l'éclat de l'art français <br><br>
+
+Dans les rues étroites d'un charmant quartier, entre l'arôme des baguettes fraîchement cuites et le tintement des tasses en porcelaine, un rêve doux et délicat est né : Éclat de Sucre. Plus qu'un nom, c'est une promesse : faire de chaque instant un moment inoubliable grâce à la confiserie artisanale française.
+<br><br>
+
+La passion a commencé dès mon plus jeune âge, lorsque mes yeux s'écarquillaient devant les vitrines des pâtisseries parisiennes. Les macarons colorés, les éclairs parfaits, les tartes méticuleusement assemblées - tout semblait magique. Et comme tout véritable enchantement, le désir de créer ces beautés a grandi avec le <br><br>
+
+Après des années d'études, de dévouement et d'aventures dans des ateliers de confiserie en France, le rêve est sorti de la planche à dessin et a pris forme, couleur et saveur. Inspiré par les traditions de la pâtisserie classique, mais avec des touches de signature et des ingrédients triés sur le volet, Éclat de Sucre a ouvert ses portes avec une mission claire : apporter au public l'élégance, la précision et la poésie de la pâtisserie française. <br><br>
+
+Chaque bonbon créé ici porte une histoire, qu'il s'agisse d'un souvenir d'enfance, d'un voyage en Provence ou du défi d'atteindre la perfection dans un mille-feuille. Rien n'est fait à la hâte. Tout est pensé, testé et réalisé avec amour et technique. <br><br>
+
+Aujourd'hui, Éclat de Sucre n'est pas seulement une pâtisserie. C'est un havre de paix pour les sens. Un lieu où chaque bouchée éveille des émotions et où chaque client est invité à vivre une expérience douce, authentique et <br>
+
+Bienvenue à Éclat de Sucre. Que l'éclat du sucre illumine vos journées.
+
+          </p>
+          </article>
+       </div>
+    </section>
+
+              <section id="secondary-content">
+                <div class="wrapper">
+                  <h2>Évaluations</h2>
+              <article style="background-image: url(/chefe5.png); background-size:cover; object-position: left 100%;">
+              
+              <div class="overplay">
+                <h3 class="title-1">Cédric <br></h3>
+                <h3 class="title"> Grolet</h3>
+                  <p>Votre pâtisserie allie technique, élégance et authenticité, avec une belle touche de modernité. Chaque détail révèle une vraie maîtrise du métier et un regard artistique remarquable. <br><br>
+                    ⭐ ⭐ ⭐ ⭐ ⭐
+                  </p>
+            
+              </div>
+            </article>
+              <article style="background-image: url(/frances.png); background-size: cover;">
+              <div class="overplay">
+                <h3 class="title-1">Michel <br></h3>
+                <h3 class="title">Guérad</h3>
+                <p>Un véritable joyau de la confiserie française ! Une technique impeccable, des saveurs équilibrées et une élégance dans les moindres détails - exactement comme il se doit. Bravo!
+                  <br><br>
+                  ⭐ ⭐ ⭐ ⭐ ⭐
+                </p>
+                
+              </div>
+               </article> 
+                <div class="clear"></div>
+                  </div>
+          
+    </section>
+
+  <div id="cta">
+    <div class="wrapper">
+      <h2>Un Goût dÉxcellence</h2>
+      <p>Du cœur de la France jusqu'à votre table ! 
+        Il n'est pas nécessaire de traverser l'océan pour goûter aux saveurs les plus délicates et les plus sophistiquées de la confiserie française.
+        Chez Éclat de Sucre, chaque bonbon est confectionné avec technique, soin et cette touche artisanale qui fait de chaque bouchée une expérience unique.
+        
+        Macarons à la coque croustillante et au fourrage crémeux, tartelettes aux fruits frais, madeleines et bien plus encore !
+        
+        Que ce soit pour une fête particulière, un cadeau charmant ou tout simplement pour se faire plaisir...
+        Nos friandises ravissent par leur saveur, leur beauté et leur authenticité. Passez votre commande ou réservez une de nos tables..</p>
+      <a href="#" class="button-2">Achetez maintenant</a>
+    </div>
+  
+  </div>
+
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="icon-circle">
+        <img src="https://img.icons8.com/ios-filled/50/motorcycle.png" alt="Delivery">
+      </div>
+      <div class="title">Livraison</div>
+      <div class="text">Seulement 30min</div>
+      <button class="btn">Lire la suite</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" style="background-color:#f99b9b;">
+      <div class="icon-circle" style="background-color: #fff;">
+        <img src="https://img.icons8.com/ios-filled/50/gift.png" alt="Package">
+      </div>
+      <div  style="color: white;" class="title">Emballage</div>
+      <div class="text">Gratuitement</div>
+      <button style="background-color: white; color: #f99b9b;" class="btn">Lire la suite</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="icon-circle">
+        <img src="https://img.icons8.com/ios-filled/50/cupcake.png" alt="Discount">
+      </div>
+      <div class="title">Réservations</div>
+      <div class="text">Á l'avance</div>
+      <button class="btn">Lire la suite</button>
+    </div>
+  </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-item">
+        <div class="icon-circle1">
+          <img src="https://img.icons8.com/ios-filled/50/email.png" alt="Email">
+        </div>
+        <div class="footer-title">Newsletter</div>
+        <div class="paragrafo">Recevez des nouvelles</div>
+      </div>
+  
+      <div class="footer-item">
+        <div class="icon-circle1">
+          <img src="https://img.icons8.com/ios-filled/50/instagram-new.png" alt="Instagram">
+        </div>
+        <div class="footer-title">Instagram</div>
+        <div class="paragrafo">@Éclat_de_sucre</div>
+      </div>
+  
+      <div class="footer-item">
+        <div class="icon-circle1">
+          <img src="https://img.icons8.com/ios-filled/50/twitter.png" alt="Twitter">
+        </div>
+        <div class="footer-title">Twitter</div>
+        <div class="paragrafo">@Éclat_de_sucre</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<script>
+  function mudouTamanho(){
+    if (window.innerWidth >= 768){
+    itens.style.display = 'block'
+  } else {
+    itens.style.display = 'none'
+  }
+}
+
+
+  function clickMenu(){
+    if (itens.style.display == 'block') {
+        itens.style.display = 'none'
+    } else {
+      itens.style.display = 'block'
+    }
+  }
+</script>
+</html>
