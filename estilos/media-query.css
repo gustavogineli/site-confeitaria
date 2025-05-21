@@ -200,10 +200,5 @@
     padding: 20px; /* Ajusta o espaçamento interno do overlay */
   }
 
-  @media (min-width: 768px){
-    .produto {
-      min-width: 30%;
-    }
-  }
 
 }
